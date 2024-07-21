@@ -36,14 +36,15 @@ public class Date {
 
 	@Override
 	public String toString() {
-		return String.format("%d/%d/%d", month, day, year);
+		return String.format("%d/%d/%4d", day, month, year);
 	}
 	
 	
-	public void setDate(int year , int month , int day) {
-		this.year = year;
+	public void setDate(int month ,int day ,int year ) {
+		this.day = day;
 	      this.month = month;
-	      this.day = day;
+	      this.year = year;
+	      
 	}
 	
 	
